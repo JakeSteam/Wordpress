@@ -21,35 +21,31 @@ This post is also <a href="https://gist.github.com/JakeSteam/868e9262ba540d38a2f
 <!--more-->
 <h2>The interface</h2>
 The interface (I've called mine <code>ActionHandler</code>) just needs to define a <code>handleAction</code> function, which takes a single string as a parameter.
-<pre>
-interface ActionHandler {
+<pre>interface ActionHandler {
     fun handleAction(actionCode: String)
 }</pre>
 <h2>The parent</h2>
 The parent activity or application needs to implement <code>ActionHandler</code> (e.g. <code>MainActivity : ActionHandler {</code>) and override <code>handleAction</code>. For example, the activity may need to perform different actions based on which fragment has just been closed.
-<pre>
-    override fun handleAction(actionCode: String) {
+<pre>    override fun handleAction(actionCode: String) {
         when {
-            actionCode == FragmentA.FRAGMENT_A_CLOSED -&amp;gt; {
+            actionCode == FragmentA.FRAGMENT_A_CLOSED -&gt; {
                 doSomething()
             }
-            actionCode == FragmentB.FRAGMENT_B_CLOSED -&amp;gt; {
+            actionCode == FragmentB.FRAGMENT_B_CLOSED -&gt; {
                 doSomethingElse()
             }
-            actionCode == FragmentC.FRAGMENT_C_CLOSED -&amp;gt; {
+            actionCode == FragmentC.FRAGMENT_C_CLOSED -&gt; {
                 doAnotherThing()
             }
         }
     }</pre>
 <h2>The child</h2>
 The child fragment or activity needs to have a public constant defined in the companion, used to check which callback is being triggered.
-<pre>
-    companion object {
+<pre>    companion object {
         const val FRAGMENT_A_CLOSED = "com.example.fragment_a_closed"
     }</pre>
 Now, when the fragment should be closed (e.g. if it's a modal and the user has pressed the close button), try to call the parent's callback. It's worth wrapping this in a try/catch in case the fragment has accidentally been opened from another activity. The parent should never be null, as an activity can't live without an application, and a fragment can't live without an activity!
-<pre>
-            try {
+<pre>            try {
                 (activity as ActionHandler).handleAction(FRAGMENT_A_CLOSED)
             } catch (e: ClassCastException) {
                 Timber.e("Calling activity can't get callback!")
