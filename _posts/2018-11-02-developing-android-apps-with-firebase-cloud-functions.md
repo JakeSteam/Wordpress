@@ -137,3 +137,5 @@ However, for many use cases it can be simpler to perform basic functionality cli
 Before rashly converting all of your node.js servers to cloud functions, consider running a test run. From this, you can see if the response times and quota fit your requirements. You may find that the ability to distribute the load over multiple regions causes unacceptable performance in some regions.
 
 Previous: <a href="https://blog.jakelee.co.uk//2018/10/25/developing-android-apps-with-firebase-realtime-database/">Developing Android Apps With Firebase Realtime Database</a>
+
+Next: Developing Android Apps With Firebase Cloud Storage
