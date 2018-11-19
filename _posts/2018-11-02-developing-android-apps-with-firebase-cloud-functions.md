@@ -138,4 +138,4 @@ Before rashly converting all of your node.js servers to cloud functions, conside
 
 Previous: <a href="https://blog.jakelee.co.uk//2018/10/25/developing-android-apps-with-firebase-realtime-database/">Developing Android Apps With Firebase Realtime Database</a>
 
-Next: Developing Android Apps With Firebase Cloud Storage
+Next: <a href="https://blog.jakelee.co.uk/developing-android-apps-with-firebase-cloud-storage/">Developing Android Apps With Firebase Cloud Storage</a>
