@@ -22,7 +22,7 @@ All implementations are into the open source <a href="https://github.com/JakeSte
  	<li><a href="https://blog.jakelee.co.uk/developing-android-apps-with-firebase-cloud-firestore/">Cloud Firestore</a></li>
  	<li><a href="https://blog.jakelee.co.uk/developing-android-apps-with-firebase-realtime-database/">Realtime Database</a></li>
  	<li><a style="transition-property: all;" href="https://blog.jakelee.co.uk/developing-android-apps-with-firebase-cloud-functions/">Cloud Functions</a></li>
- 	<li>Storage</li>
+ 	<li><a href="https://blog.jakelee.co.uk/developing-android-apps-with-firebase-cloud-storage/">Cloud Storage</a></li>
  	<li>Hosting</li>
  	<li>ML Kit</li>
 </ul>
