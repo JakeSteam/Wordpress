@@ -24,7 +24,7 @@ All implementations are into the open source <a href="https://github.com/JakeSte
  	<li><a style="transition-property: all;" href="https://blog.jakelee.co.uk/developing-android-apps-with-firebase-cloud-functions/">Cloud Functions</a></li>
  	<li><a href="https://blog.jakelee.co.uk/developing-android-apps-with-firebase-cloud-storage/">Cloud Storage</a></li>
  	<li><a href="https://blog.jakelee.co.uk/developing-web-apps-with-firebase-hosting/">(Web) Hosting</a></li>
- 	<li>ML Kit</li>
+ 	<li><a href="https://blog.jakelee.co.uk/developing-android-apps-with-firebase-ml-kit/">ML Kit</a></li>
 </ul>
 </li>
  	<li>"Ensuring Your Android App's Quality With Firebase X":
