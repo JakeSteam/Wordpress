@@ -135,3 +135,5 @@ The 1GB/day bandwidth limit may be an issue for applications that need to transf
 <a href="https://blog.jakelee.co.uk/wp-content/uploads/2018/11/quota.png"><img class="aligncenter size-large wp-image-1997" src="https://blog.jakelee.co.uk/wp-content/uploads/2018/11/quota-1024x224.png" alt="" width="730" height="160" /></a>
 
 Previous: <a href="https://blog.jakelee.co.uk/developing-android-apps-with-firebase-cloud-functions/">Developing Android Apps With Firebase Cloud Functions</a>
+
+Next: <a href="https://blog.jakelee.co.uk/developing-android-apps-with-firebase-ml-kit/">Developing Android Apps With Firebase ML Kit</a>
