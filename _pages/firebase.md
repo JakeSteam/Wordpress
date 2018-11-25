@@ -29,7 +29,7 @@ All implementations are into the open source <a href="https://github.com/JakeSte
 </li>
  	<li>"Ensuring Your Android App's Quality With Firebase X":
 <ul>
- 	<li>Crashlytics</li>
+ 	<li><a href="https://blog.jakelee.co.uk/ensuring-your-android-apps-quality-with-firebase-crashlytics/">Crashlytics</a></li>
  	<li>Performance</li>
  	<li>Test Lab</li>
 </ul>
