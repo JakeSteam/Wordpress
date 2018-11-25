@@ -216,3 +216,5 @@ However, the very nature of the image analysis technique means that there is no 
 From my own experimentation, the facial analysing performed amazingly well, as did the object recognition. However, somewhat surprisingly, the text identification was much less successful. This is likely due to the large number of fonts available, as well as the similarity between many letters, but it's still unusual that the most common use case is the least accurate!
 
 Previous: <a href="https://blog.jakelee.co.uk/developing-android-apps-with-firebase-cloud-storage/">Developing Android Apps With Firebase Cloud Storage</a>
+
+Next: <a href="https://blog.jakelee.co.uk/ensuring-your-android-apps-quality-with-firebase-crashlytics/">Ensuring Your Android App's Quality With Firebase Crashlytics</a>
