@@ -11,7 +11,7 @@ post_date: 2018-11-27 18:00:23
 ---
 Often, an app may take a few seconds to start-up, especially the first time. A plain white screen is shown by default, luckily this can be customised relatively easily! The solution is to add a splash screen to your app, whilst being careful to avoid increasing the app's load time.
 
-Many naïve splash screens actually make the app take longer to load, but introducing an artificial delay. The approach in this tutorial doesn't increase load time, and only displays as long as the app loads. An <a href="https://github.com/JakeSteam/SplashScreenDemo">example implementation is available</a>.
+Many naïve splash screens actually make the app take longer to load by introducing an artificial delay. The approach in this tutorial doesn't increase load time, and only displays as long as the app loads. An <a href="https://github.com/JakeSteam/SplashScreenDemo">example implementation is available</a>.
 
 <!--more-->
 
