@@ -34,6 +34,18 @@ All implementations are into the open source <a href="https://github.com/JakeSte
  	<li>Test Lab</li>
 </ul>
 </li>
+ 	<li>"Growing Your Android App With Firebase X":
+<ul>
+ 	<li>Invites</li>
+ 	<li>Predictions</li>
+ 	<li>A/B Testing</li>
+ 	<li>Cloud Messaging</li>
+ 	<li>In-App Messaging</li>
+ 	<li>Remote Config</li>
+ 	<li>Dynamic Links</li>
+ 	<li>Admob</li>
+</ul>
+</li>
  	<li>"Analysing Your Android App's Usage With Firebase X":
 <ul>
  	<li>Dashboard</li>
@@ -46,18 +58,6 @@ All implementations are into the open source <a href="https://github.com/JakeSte
  	<li>Retention</li>
  	<li>StreamView</li>
  	<li>DebugView</li>
-</ul>
-</li>
- 	<li>"Growing Your Android App With Firebase X":
-<ul>
- 	<li>Invites</li>
- 	<li>Predictions</li>
- 	<li>A/B Testing</li>
- 	<li>Cloud Messaging</li>
- 	<li>In-App Messaging</li>
- 	<li>Remote Config</li>
- 	<li>Dynamic Links</li>
- 	<li>Admob</li>
 </ul>
 </li>
 </ul>
