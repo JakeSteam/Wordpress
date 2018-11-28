@@ -36,7 +36,7 @@ All implementations are into the open source <a href="https://github.com/JakeSte
 </li>
  	<li>"Growing Your Android App With Firebase X":
 <ul>
- 	<li>Invites</li>
+ 	<li><a href="https://blog.jakelee.co.uk/growing-your-android-app-with-firebase-invites/">Invites</a></li>
  	<li>Predictions</li>
  	<li>A/B Testing</li>
  	<li>Cloud Messaging</li>
