@@ -31,6 +31,6 @@ I currently help moderate all of these communities, so feel free to message me o
 
 <a href="https://discordapp.com/invite/Fa9ahHK"><img class="aligncenter size-full wp-image-2107" src="https://blog.jakelee.co.uk/wp-content/uploads/2018/12/androidgaming.png" alt="" width="473" height="375" /></a>
 
-<a href="https://discord.gg/Cw62EkV">/r/AndroidQuestions</a>: This server is quieter than the others, and is full of people asking questions, and a few helping. Generally the subreddit is a better place to ask, but it can't hurt asking here too.
+<a href="https://discord.gg/Cw62EkV">/r/AndroidQuestions</a>: This server is quieter than the others (500 members), and is full of people asking questions, and a few helping. Generally the subreddit is a better place to ask, but it can't hurt asking here too.
 
 <a href="https://discordapp.com/invite/Cw62EkV"><img class="aligncenter size-full wp-image-2108" src="https://blog.jakelee.co.uk/wp-content/uploads/2018/12/androidquestions.png" alt="" width="471" height="377" /></a>
