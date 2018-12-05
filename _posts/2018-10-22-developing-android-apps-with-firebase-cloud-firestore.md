@@ -33,25 +33,22 @@ It can take 20-30 seconds for the Cloud Firestore database to start up, but once
 <img class="alignnone size-full wp-image-1778" src="https://blog.jakelee.co.uk//wp-content/uploads/2018/10/ptkscmb.png" alt="ptkscmb" width="671" height="353" />
 
 In the app, just add the following dependency to begin using Cloud Firestore:
-<pre>
-implementation 'com.google.firebase:firebase-firestore:17.1.1'</pre>
+<pre>implementation 'com.google.firebase:firebase-firestore:17.1.1'</pre>
 For all of the following examples, <code>db</code> is defined as <code>FirebaseFirestore.getInstance()</code>
 <h3>Getting data (<code>SELECT</code>)</h3>
 There are 2 ways to get data, automatically when it changes or on demand, both will be covered here.
 <h4>Automatically retrieving Firestore data</h4>
 Luckily, setting up a listener for data changes is extremely straightforward, and it provides a <code>querySnapshot</code> with the latest version of all rows. This can be run on any query, but for monitoring all data the following should be used:
-<pre>
-        db.collection(tableName).addSnapshotListener { querySnapshot, _ -&gt;
+<pre>        db.collection(tableName).addSnapshotListener { querySnapshot, _ -&gt;
             displayDocuments(querySnapshot!!.documents)
         }</pre>
 <h4>Selectively getting Firestore data</h4>
 Using <code>db.collection("MyTable")</code> returns all documents (essentially rows) within in the "MyTable" collection (table).
-<pre>
-db.collection(tableName)
+<pre>db.collection(tableName)
             .orderBy("number", Query.Direction.DESCENDING)
             .limit(3)
             .get()
-            .addOnCompleteListener { task -&amp;gt;
+            .addOnCompleteListener { task -&gt;
                 if (task.isSuccessful) {
                     displayDocuments(task.result?.documents!!)
                 } else {
@@ -68,8 +65,7 @@ As with any database, usually when you're retrieving data it's going to be with 
 <h3>Inserting data (<code>CREATE</code>)</h3>
 <h4>Automatically setting Firestore ID</h4>
 Creating a new row / document is extremely easy, and just requires passing a <code>HashMap</code> of columns and values to <code>.add()</code>. Adding listeners is simple too.
-<pre>
-db.collection(tableName)
+<pre>db.collection(tableName)
             .add(hashMapOf(
                     "columnA" to 123,
                     "columnB" to "a value"
@@ -82,8 +78,7 @@ db.collection(tableName)
             }</pre>
 <h4>Manually setting Firestore ID</h4>
 Whilst similar to the previous section, manually setting a Firestore ID (primary key) requires looking up the non-existent ID with <code>.document()</code>, then setting it's values using <code>set()</code>.
-<pre>
-       db.collection(tableName).document("newDocumentID")
+<pre>       db.collection(tableName).document("newDocumentID")
             .set(hashMapOf(
                     "columnA" to 123,
                     "columnB" to "a value"
@@ -98,15 +93,13 @@ Whilst similar to the previous section, manually setting a Firestore ID (primary
 Updating rows is very straightforward, once a reference to a row is obtained <code>.set()</code> will do all the work of synchronising changes and resolving any conflicts.
 
 The following snippets assumes <code>it.id</code> is a document reference, and updates "columnName" to "1234":
-<pre>
-                        val ref = db.collection(tableName).document(it.id)
+<pre>                        val ref = db.collection(tableName).document(it.id)
                         it.data?.let {
                             ref.update("columnName", 1234)
                         }</pre>
 <h3>Deleting data (<code>DELETE</code>)</h3>
 Similarly to updating data, deleting data just requires calling <code>.delete()</code> on the document reference.
-<pre>
-                        val ref = db.collection(tableName).document(it.id)
+<pre>                        val ref = db.collection(tableName).document(it.id)
                         ref.delete()</pre>
 <h2><a href="https://console.firebase.google.com/u/0/project/_/database/firestore" target="_blank" rel="noopener">Web interface</a></h2>
 <h3>Data tab</h3>
