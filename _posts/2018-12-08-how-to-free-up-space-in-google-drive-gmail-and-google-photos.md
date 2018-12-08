@@ -13,7 +13,7 @@ post_date: 2018-12-08 15:21:26
 ---
 I've been lightly using Google Drive, Gmail, and Google Photos for close to 6 years, with no major complaints. The default space limitation is 15GB, with an extra 2GB available for each year the <a href="https://blog.google/products/drive/safer-internet-day-2016/" target="_blank" rel="noopener">security checkup is completed</a>. There was also previously 100GB (expiring after a year) available for local guides, but this <a href="https://www.androidpolice.com/2017/03/03/new-level-4-local-guides-google-maps-will-no-longer-receive-free-100gb-drive-storage/">program is now cancelled</a>.
 
-Recently I realised I was getting unnervingly close (84%) to my 19GB limit, and went on a quest to minimise this amount as much as possible, eventually getting it down to 6% without losing any useful content!
+Recently I realised I was getting unnervingly close (84%) to my 19GB limit, and went on a quest to minimise this amount as much as possible, eventually getting it down to 6% without losing any useful content!<!--more-->
 
 First, <a href="https://one.google.com/storage" target="_blank" rel="noopener">view your overall usage at Google One</a>, this will help you guide your efforts to the biggest space hoggers. My initial overview is shown below, further updates will be shown throughout this tutorial.
 
