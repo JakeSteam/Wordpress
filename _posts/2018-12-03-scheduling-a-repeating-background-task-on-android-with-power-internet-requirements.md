@@ -106,4 +106,4 @@ Firebase's JobDispatcher library provides a simple way to schedule future tasks.
 
 The only downside is the requirement on Google Play Services to centrally coordinate your job scheduling. If you distribute your app via the Play Store this isn't an issue, but will cause serious problems for those distributing externally.
 
-Note that this is just one of the many services Firebase offers, and there is <a href="https://blog.jakelee.co.uk/firebase/">an ongoing service covering each one</a>.
+Note that this is just one of the many services Firebase offers, and there is <a href="https://blog.jakelee.co.uk/firebase/">an ongoing series covering each one</a>.
