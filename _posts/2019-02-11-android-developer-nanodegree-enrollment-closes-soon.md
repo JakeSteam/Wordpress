@@ -20,3 +20,4 @@ Whilst the suggested degree length is 8 months, steps are completed at your own 
 The classroom opens February 12, 2019, and requires Java, Git, and GitHub experience beforehand. A <a href="https://s3-us-west-1.amazonaws.com/udacity-content/PDFs/Syllabus-AndroidDeveloperNanodegree.pdf" target="_blank" rel="noopener">full syllabus is available</a>.
 
 Note that this post isn't sponsored at all, I'm just hoping to have more people on the course to discuss assignments with!
+<h3><a href="https://eu.udacity.com/course/android-developer-nanodegree-by-google--nd801" target="_blank" rel="noopener"><strong>Enroll here</strong></a>.</h3>
