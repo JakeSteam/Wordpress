@@ -23,7 +23,7 @@ Note that GitKraken also has <a href="https://support.gitkraken.com/git-workflow
 <h2>Installing GPG</h2>
 First, <a href="https://gpg4win.org/get-gpg4win.html" target="_blank" rel="noopener noreferrer">download Gpg4win</a> (select $0 donation if you do not wish to donate, <a href="https://support.gitkraken.com/git-workflows-and-extensions/commit-signing-with-gpg/#commit-signing-requirements" target="_blank" rel="noopener noreferrer">mac / linux options also available</a>).
 
-Next follow the installer's steps, unselecting GPGOL (Outlook email signing) and GPGEX (Right-click signing).
+Next follow the installer's steps, deselecting GPGOL (Outlook email signing) and GPGEX (Right-click signing).
 
 <a href="https://blog.jakelee.co.uk/wp-content/uploads/2019/03/2HFJNf1.png"><img class="aligncenter size-full wp-image-2447" src="https://blog.jakelee.co.uk/wp-content/uploads/2019/03/2HFJNf1.png" alt="" width="499" height="388" /></a>
 
@@ -62,4 +62,4 @@ When you push this commit, GitHub will also reflect your verified commit status:
 
 Your future commits are now all verified!
 
-Considering how popular <a href="https://www.gitkraken.com/download" target="_blank" rel="noopener noreferrer">GitKraken</a> is becoming (it's my personal client of choice), being able to implement commit signing so easily provides yet another reason to switchover. Going forward, I fully intend to verify all my commits, with no additional effort beyond the original setup!
+Considering how popular <a href="https://www.gitkraken.com/download" target="_blank" rel="noopener noreferrer">GitKraken</a> is becoming (it's my personal client of choice), being able to implement commit signing so easily provides yet another reason to switchover. Going forward, I fully intend to verify all my commits, with no extra effort beyond the original setup!
