@@ -18,6 +18,8 @@ Whilst most developers use hosted git repositories on a service like GitHub, man
 An effortless way to protect against this is with git verified signatures. This proves that a commit was <em>really</em> from the person. GitKraken <a href="https://support.gitkraken.com/release-notes/current/#version-500" target="_blank" rel="noopener noreferrer">introduced this feature a week ago</a>, and it seems to work perfectly. This tutorial will provide a very simple guide to getting verified commits configured.
 
 <!--more-->
+
+Note that GitKraken also has <a href="https://support.gitkraken.com/git-workflows-and-extensions/commit-signing-with-gpg/" target="_blank" rel="noopener noreferrer">a very in-depth guide</a> with lots of extra information.
 <h2>Installing GPG</h2>
 First, <a href="https://gpg4win.org/get-gpg4win.html" target="_blank" rel="noopener noreferrer">download Gpg4win</a> (select $0 donation if you do not wish to donate, <a href="https://support.gitkraken.com/git-workflows-and-extensions/commit-signing-with-gpg/#commit-signing-requirements" target="_blank" rel="noopener noreferrer">mac / linux options also available</a>).
 
