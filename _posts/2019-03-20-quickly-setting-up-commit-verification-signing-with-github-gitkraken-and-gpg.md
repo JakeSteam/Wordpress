@@ -35,7 +35,7 @@ Now that GitKraken knows about GPG, you can press "Generate", with an optional p
 
 <a href="https://blog.jakelee.co.uk/wp-content/uploads/2019/03/Qrw6Wbp.png"><img class="aligncenter wp-image-2438 size-full" src="https://blog.jakelee.co.uk/wp-content/uploads/2019/03/Qrw6Wbp.png" alt="" width="551" height="274" /></a>
 
-After a few seconds, you will now have a GPG signing key! The "Signing Key" field of GitKraken's GPG Preferences screen is now be populated with your new key.
+After a few seconds, you will now have a GPG signing key! The "Signing Key" field of GitKraken's GPG Preferences screen is now populated with your new key.
 
 <a href="https://blog.jakelee.co.uk/wp-content/uploads/2019/03/hzQUOhK.png"><img class="aligncenter size-medium wp-image-2439" src="https://blog.jakelee.co.uk/wp-content/uploads/2019/03/hzQUOhK-300x90.png" alt="" width="300" height="90" /></a>
 
