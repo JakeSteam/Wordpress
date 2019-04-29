@@ -27,7 +27,7 @@ There are 2 easy solutions to this. The first is preferred, but not always possi
 <h2>Checking current location</h2>
 The first solution is to check the current location is correct before acting on an action. This will stop the above process before #4. The downside of this is needing to always know the layout of your app, and being unable to reuse navigation actions easily from other fragments. However, for a simple app / use case this will instantly resolve the issue:
 <pre>if (it.findNavController().currentDestination?.id == R.id.fragment_dashboard) {
-    it.findNavController().navigate(R.id.toDetails)
+    it.findNavController().navigate(R.id.fragment_detail)
 }</pre>
 Note that <code>R.id.fragment_dashboard</code> is the nav graph ID of the current fragment, and <code>R.id.fragment_detail</code> is the nav graph ID of the target fragment.
 <h2>Catching exception</h2>
