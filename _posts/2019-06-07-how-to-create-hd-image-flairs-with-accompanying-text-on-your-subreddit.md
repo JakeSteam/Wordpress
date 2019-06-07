@@ -13,7 +13,7 @@ post_date: 2019-06-07 15:39:40
 ---
 Over on <a href="http://www.reddit.com/r/androiddev" target="_blank" rel="noopener noreferrer">/r/AndroidDev</a>, we're shortly going to be hosting AMAs from a few prominent devs. In preparation for this, I wanted to revisit Reddit's user flair system, so users can have their employer's icon. Whilst I've assigned plenty of flairs over on <a href="http://www.reddit.com/r/android" target="_blank" rel="noopener noreferrer">/r/Android</a>, I've never actually created one from scratch. The end result of this tutorial will be the ability to easily give your subreddit's users custom image flairs, whilst allowing them to add their own text.
 
-Note that most of this post is to do with the old reddit design. For getting them working on the new design, please scroll to that section!
+Note that most of this post is to do with getting flairs to work on the old reddit design. Getting them working on the new design is much simpler, please <a href="#redesign">skip to that section</a>!
 
 <!--more-->
 <h2>Preparing your icons</h2>
@@ -36,8 +36,6 @@ You now need to make a single image that contains all of your flair images, stac
  	<li>Rename this file to <code>flair-spritesheet.png</code> or similar, as many themes already have a <code>spritesheet.png</code>.</li>
 </ol>
 <a href="https://blog.jakelee.co.uk/wp-content/uploads/2019/06/OWIg1HX.png"><img class="aligncenter size-medium wp-image-2532" src="https://blog.jakelee.co.uk/wp-content/uploads/2019/06/OWIg1HX-300x248.png" alt="" width="300" height="248" /></a>
-
-&nbsp;
 <h3>Creating your CSS</h3>
 You now need to make the actual changes to your subreddit! We'll upload our spritesheet, then set up some CSS to give styles to the flair classes.
 
@@ -86,7 +84,7 @@ To add new flairs, just:
 For example, if I was going to add a new flair after <code>.flair-nerdery:before{width:16px;background-position: 0 -48px}</code>, it would be <code>.flair-newcompany:before{width:16px;background-position: 0 -64px}</code>, and the <code>auto 64px</code> bit would change to <code>auto 80px</code>.
 
 &nbsp;
-<h2>On Reddit post-redesign (new reddit)</h2>
+<h2 id="redesign">On Reddit post-redesign (new reddit)</h2>
 <h3>Upload emoji</h3>
 On the "Emojis" page (Mod Tools -&gt; Emojis, or <a href="https://new.reddit.com/r/yoursubredditname/about/emojis" target="_blank" rel="noopener noreferrer"><code>https://new.reddit.com/r/yoursubredditname/about/emojis</code></a>), add a new emoji via the "Add Emoji" button in the top right. This should be the square image prepared earlier in the post, and images can be uploaded in bulk. Make sure the "Mod only" slider is enabled.
 <h3>Create user flair template</h3>
