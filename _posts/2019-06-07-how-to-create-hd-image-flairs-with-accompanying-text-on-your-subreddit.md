@@ -45,11 +45,11 @@ First, head to your subreddit's stylesheet ("edit stylesheet" on sidebar or <cod
 Add the following to the very bottom of the (possibly empty) CSS code box:
 <pre>.flair:before{
     content:"";
-    height:16px;
+    height:16px; /* size of displayed image */
     margin-top:-2px;
     background-repeat:no-repeat;
-    background-image:url(%%flair-spritesheet%%);
-    background-size:auto 64px;
+    background-image:url(%%flair-spritesheet%%); /* name of the flair spritesheet uploaded */
+    background-size:auto 64px; /* 64px = total height of image */
     display:inline-block;
     vertical-align:middle
 }
@@ -79,9 +79,10 @@ To add new flairs, just:
  	<li>Add your new 64x64 image to the bottom of the <code>flair-spritesheet.png</code>.</li>
  	<li>Reupload it, overwriting the existing one.</li>
  	<li>Add a new row to the CSS, with the final number changed to 16px lower than the last row.</li>
+ 	<li>Change <code>background-size:auto 64px</code> to be <code>16 x the number of icons</code> (so 16 higher than the previous value).</li>
  	<li>Save the CSS.</li>
 </ul>
-For example, if I was going to add a new flair after <code>.flair-nerdery:before{width:16px;background-position: 0 -48px}</code>, it would be <code>.flair-newcompany:before{width:16px;background-position: 0 -64px}</code>.
+For example, if I was going to add a new flair after <code>.flair-nerdery:before{width:16px;background-position: 0 -48px}</code>, it would be <code>.flair-newcompany:before{width:16px;background-position: 0 -64px}</code>, and the <code>auto 64px</code> bit would change to <code>auto 80px</code>.
 <h2>Final thoughts</h2>
 As mentioned before, I don't believe this system can work on the Reddit redesign. Whilst I could add mod-only emojis of company icons, add them to flairs, and then assign them to users, these emojis wouldn't actually appear. I'm assuming this is because the users were not mods. Hopefully future improvements to the flair system allow for a simple system that works on both old and new designs.
 
