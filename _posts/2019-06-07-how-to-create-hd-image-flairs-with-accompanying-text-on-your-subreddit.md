@@ -13,7 +13,7 @@ post_date: 2019-06-07 15:39:40
 ---
 Over on <a href="http://www.reddit.com/r/androiddev" target="_blank" rel="noopener noreferrer">/r/AndroidDev</a>, we're shortly going to be hosting AMAs from a few prominent devs. In preparation for this, I wanted to revisit Reddit's user flair system, so users can have their employer's icon. Whilst I've assigned plenty of flairs over on <a href="http://www.reddit.com/r/android" target="_blank" rel="noopener noreferrer">/r/Android</a>, I've never actually created one from scratch. The end result of this tutorial will be the ability to easily give your subreddit's users custom image flairs, whilst allowing them to add their own text.
 
-Note that this will not work on the Reddit redesign, as it doesn't appear to currently have the flexibility with images / "emojis" required.
+Note that most of this post is to do with the old reddit design. For getting them working on the new design, please scroll to that section!
 
 <!--more-->
 <h2>Preparing your icons</h2>
@@ -24,7 +24,8 @@ You can find your images from various places, depending on what you're using fla
 For the /r/AndroidDev images, I looked on the company's branding site, their LinkedIn profile pictures, and sometimes the start of their site's source code (as it contained a 64x64 favicon). Once I had all my images ready, I moved on to creating a sprite sheet...
 
 <a href="https://blog.jakelee.co.uk/wp-content/uploads/2019/06/ODlJX4O.png"><img class="aligncenter size-full wp-image-2531" src="https://blog.jakelee.co.uk/wp-content/uploads/2019/06/ODlJX4O.png" alt="" width="507" height="103" /></a>
-<h2>Creating a sprite sheet</h2>
+<h2>On Reddit pre-redesign (old reddit)</h2>
+<h3>Creating a sprite sheet</h3>
 You now need to make a single image that contains all of your flair images, stacked vertically. You can either do this yourself, or use an online tool like <a href="https://spritegen.website-performance.org/" target="_blank" rel="noopener noreferrer">SpriteGen</a>. If using SpriteGen, follow these steps:
 <ol>
  	<li>Press "Clear" to remove the default images.</li>
@@ -37,7 +38,7 @@ You now need to make a single image that contains all of your flair images, stac
 <a href="https://blog.jakelee.co.uk/wp-content/uploads/2019/06/OWIg1HX.png"><img class="aligncenter size-medium wp-image-2532" src="https://blog.jakelee.co.uk/wp-content/uploads/2019/06/OWIg1HX-300x248.png" alt="" width="300" height="248" /></a>
 
 &nbsp;
-<h2>Creating your CSS</h2>
+<h3>Creating your CSS</h3>
 You now need to make the actual changes to your subreddit! We'll upload our spritesheet, then set up some CSS to give styles to the flair classes.
 
 First, head to your subreddit's stylesheet ("edit stylesheet" on sidebar or <code><a href="https://www.reddit.com/r/yoursubredditname/about/stylesheet/" target="_blank" rel="noopener noreferrer">https://www.reddit.com/r/yoursubredditname/about/stylesheet/</a></code>). Then, on the image selector, choose your <code>flair-spritesheet.png</code>, make sure the "new image name" is <code>flair-spritesheet</code>, and press "Upload".
@@ -61,7 +62,7 @@ Add the following to the very bottom of the (possibly empty) CSS code box:
 Each flair we're adding is a new CSS class, with a very simple piece of code. This code sets the image flair's width, and how much of an offset on the spritesheet to use to find the image. Under the <code>.flair:before</code>'s class, the <code>background-size</code> value must be changed if you are using an image size other than 64x64.
 
 We now have flair classes of <code>android</code>, <code>discord</code>, <code>google</code>, and <code>nerdery</code> set up!
-<h2>Assigning the flair</h2>
+<h3>Assigning the flair</h3>
 To actually give users this flair, head to the "edit flair" option in the sidebar (or <code><a href="https://www.reddit.com/r/androiddev/about/flair/" target="_blank" rel="noopener noreferrer">https://www.reddit.com/r/androiddev/about/flair/</a></code>). Under the "grant flair" tab, enter the user you wish to give a flair, and press "Go".
 
 You can now choose the text that appears next to their name, as well as the image flair. For example, I want the Discord icon next to my name, so I set <code>discord</code> as the CSS class (derived from the <code>flair-discord</code> CSS class defined earlier).
@@ -73,7 +74,7 @@ Press "Save", and you'll see the new flair:
 And here's how it looks next to my name. Perfect!
 
 <a href="https://blog.jakelee.co.uk/wp-content/uploads/2019/06/aw1ZpWY.png"><img class="aligncenter size-full wp-image-2535" src="https://blog.jakelee.co.uk/wp-content/uploads/2019/06/aw1ZpWY.png" alt="" width="241" height="29" /></a>
-<h2>Adding new flairs</h2>
+<h3>Adding new flairs</h3>
 To add new flairs, just:
 <ul>
  	<li>Add your new 64x64 image to the bottom of the <code>flair-spritesheet.png</code>.</li>
@@ -83,9 +84,24 @@ To add new flairs, just:
  	<li>Save the CSS.</li>
 </ul>
 For example, if I was going to add a new flair after <code>.flair-nerdery:before{width:16px;background-position: 0 -48px}</code>, it would be <code>.flair-newcompany:before{width:16px;background-position: 0 -64px}</code>, and the <code>auto 64px</code> bit would change to <code>auto 80px</code>.
+
+&nbsp;
+<h2>On Reddit post-redesign (new reddit)</h2>
+<h3>Upload emoji</h3>
+On the "Emojis" page (Mod Tools -&gt; Emojis, or <a href="https://new.reddit.com/r/yoursubredditname/about/emojis" target="_blank" rel="noopener noreferrer"><code>https://new.reddit.com/r/yoursubredditname/about/emojis</code></a>), add a new emoji via the "Add Emoji" button in the top right. This should be the square image prepared earlier in the post, and images can be uploaded in bulk. Make sure the "Mod only" slider is enabled.
+<h3>Create user flair template</h3>
+On the "User flair" page (Mod Tools -&gt; User flair, or <code><a href="https://new.reddit.com/r/androiddev/about/flair" target="_blank" rel="noopener noreferrer">https://new.reddit.com/r/androiddev/about/userflair</a></code>), click the "Add flair" button in the top right.
+
+Make sure you tick "Mod only" <strong>first</strong>, otherwise mod-only emojis won't appear. Then set your flair text to "[emoji] Your text" (see example below), and your CSS class from earlier. Emojis can be added by clicking the smiley face icon.
+
+<a href="https://blog.jakelee.co.uk/wp-content/uploads/2019/06/xK1PPIi.png"><img class="aligncenter size-full wp-image-2541" src="https://blog.jakelee.co.uk/wp-content/uploads/2019/06/xK1PPIi.png" alt="" width="645" height="289" /></a>
+<h3>Assign the flair</h3>
+Finally, on the "Grant user flair" page (Mod Tools -&gt; Grant user flair, or <code><a href="https://new.reddit.com/r/androiddev/about/flair" target="_blank" rel="noopener noreferrer">https://new.reddit.com/r/androiddev/about/flair</a></code>), search for the user you want to give flair, and set their Flair Template and CSS Class. The newly created flair template should be used, and will end up looking like this:
+
+<a href="https://blog.jakelee.co.uk/wp-content/uploads/2019/06/CrbrE44.png"><img class="aligncenter size-full wp-image-2542" src="https://blog.jakelee.co.uk/wp-content/uploads/2019/06/CrbrE44.png" alt="" width="788" height="244" /></a>
+
+&nbsp;
 <h2>Final thoughts</h2>
-As mentioned before, I don't believe this system can work on the Reddit redesign. Whilst I could add mod-only emojis of company icons, add them to flairs, and then assign them to users, these emojis wouldn't actually appear. I'm assuming this is because the users were not mods. Hopefully future improvements to the flair system allow for a simple system that works on both old and new designs.
+I'd like to mention a frequently referenced <a href="https://www.reddit.com/r/csshelp/wiki/userflair" target="_blank" rel="noopener noreferrer">user flair tutorial from 2015</a>. I used this for my first attempt, but discovered that it could only handle 16x16 images, which looked pretty bad in almost all cases. Additionally, if you are going to use other sizes than 16px for the displayed image and 64px for the source images, you just need to replace every instance of the value. You can have much larger displayed flairs, but they'll start messing up the page's layout pretty quickly!
 
-I'd also like to mention a frequently referenced <a href="https://www.reddit.com/r/csshelp/wiki/userflair" target="_blank" rel="noopener noreferrer">user flair tutorial from 2015</a>. I used this for my first attempt, but discovered that it could only handle 16x16 images, which looked pretty bad in almost all cases.
-
-Finally, if you are going to use other sizes than 16px for the displayed image and 64px for the source images, you just need to replace every instance of the value. You can have much larger displayed flairs, but they'll start messing up the page's layout pretty quickly!
+The first version of this post didn't mention the redesign, as I didn't believe mod-only image flairs were possible. Special thanks to <span class="username">Geo☆1088</span><span class="discriminator">#2272 on the <a href="https://discord.gg/exJwjth" target="_blank" rel="noopener noreferrer">Reddit Mod discord</a> for helping me figure it out. The redesign definitely makes it a lot easier, although it's unfortunate that effort needs to be duplicated to work on both systems.</span>
