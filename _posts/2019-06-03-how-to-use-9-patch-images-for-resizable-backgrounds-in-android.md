@@ -59,6 +59,7 @@ The 9-patch editor consists of:
 </ol>
 </li>
 </ol>
+Note: The top and left bars define which areas are <strong>stretchable</strong>, but the bottom and right actually define which areas should contain <strong>content</strong>. These are often the same, but you may want them to be slightly different (e.g. to apply a bit of extra padding around the content).
 <h2>Tips for converting PNGs to 9-patch</h2>
 In most cases, your 9-patch will end up perfectly symmetrical (vertically &amp; horizontally), with black bars on all 4 edges and transparent corners. This will allow the edges to stretch, but not the corners. For example, here is how the earlier example looks in the editor:
 
