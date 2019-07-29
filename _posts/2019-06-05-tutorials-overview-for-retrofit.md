@@ -11,7 +11,7 @@ post_date: 2019-06-05 17:00:51
 ---
 Whilst I've used <a href="https://square.github.io/retrofit/" target="_blank" rel="noopener noreferrer">Retrofit</a> before, I'd always just used the very basics and not thought much about it. Hey, it's just the API interface, who cares right? I decided to check out a few implementations of the basics, making a repo along the way. <a href="https://github.com/JakeSteam/retrofit-experiments" target="_blank" rel="noopener noreferrer">This GitHub repo is available here</a>, and contains completed versions of most of the tutorials listed here.
 
-This post will very briefly cover the few tutorials used, although not all were completed fully for various reasons. W.<!--more-->
+This post will very briefly cover the few tutorials used, although not all were completed fully for various reasons. <!--more-->
 <h2>"Retrofit - A simple Android tutorial" - Prakash Pun</h2>
 <a href="https://blog.jakelee.co.uk/wp-content/uploads/2019/06/1_VCQULp9m08s4dO2TgXg2Zw.png"><img class="alignleft size-medium wp-image-2523" src="https://blog.jakelee.co.uk/wp-content/uploads/2019/06/1_VCQULp9m08s4dO2TgXg2Zw-169x300.png" alt="" width="169" height="300" /></a><a href="https://medium.com/@prakash_pun/retrofit-a-simple-android-tutorial-48437e4e5a23" target="_blank" rel="noopener noreferrer">This tutorial</a> starts off strong, providing prominent links to the example repo and library. Each step is clearly defined, as well as why the code is needed. Luckily, Prakash also avoids falling into the mistake of pages upon pages of boilerplate code, and keeps it simple.
 
