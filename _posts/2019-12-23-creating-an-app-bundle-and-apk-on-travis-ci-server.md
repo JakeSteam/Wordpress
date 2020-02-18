@@ -135,7 +135,7 @@ else
     convertBundleToApk ${DEBUG_BUNDLE_PATH} ${DEBUG_KEYSTORE_PATH} ${DEBUG_KEYSTORE_PASSWORD} ${DEBUG_KEYSTORE_ALIAS} ${DEBUG_KEYSTORE_KEY_PASSWORD}
     uploadToDeployGate;
 fi</pre>
-Finally, the next step for me will be moving away from APKs completely, by using <a href="https://support.google.com/googleplay/android-developer/answer/9303479?hl=en-GB" target="_blank" rel="noopener noreferrer">Google Play Internal App Sharing</a> for QA. This won't be until the new year, and a post will be made!
+Finally, the next step for me will be moving away from APKs completely, by using <a href="https://support.google.com/googleplay/android-developer/answer/9303479?hl=en-GB" target="_blank" rel="noopener noreferrer">Google Play Internal App Sharing</a> for QA. The <a href="https://blog.jakelee.co.uk/uploading-an-app-bundle-to-google-play-internal-app-sharing-from-travis-ci/">article for implementing this</a> is now available.
 
 PS: Just in case anyone missed it, here's the outcome of this post: <a href="https://gist.github.com/JakeSteam/eacc45ddd0db942d6902150f09dfa39f" target="_blank" rel="noopener noreferrer">https://gist.github.com/JakeSteam/eacc45ddd0db942d6902150f09dfa39f</a>
 
