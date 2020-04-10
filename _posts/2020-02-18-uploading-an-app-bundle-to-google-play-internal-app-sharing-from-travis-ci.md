@@ -15,6 +15,10 @@ In a post towards the end of last year, I explained <a href="https://blog.jakele
 
 Google Play Internal App Sharing is my chosen destination, since that allows QAs to easily download and test the app bundle.<!--more-->
 
+<strong>Update</strong>: If using Gradle plugin 3.5.0+, the app bundle will be generated at <code>app-&lt;variant&gt;.aab</code> (e.g. <code>app-debug.aab</code>) instead of <code>app.aab</code>. The following tutorial has been left unchanged, make sure to edit your script if using a later Gradle plugin version!
+
+&nbsp;
+
 This post assumes you already have a custom bash script running on your CI, and are already generating app bundles. If that isn't the case, please read the <a href="https://blog.jakelee.co.uk/creating-an-app-bundle-and-apk-on-travis-ci-server/" target="_blank" rel="noopener noreferrer">previous post in the series</a> (or view <a href="https://gist.github.com/JakeSteam/eacc45ddd0db942d6902150f09dfa39f" target="_blank" rel="noopener noreferrer">the end code</a>). You can view the end result of this post <a href="https://gist.github.com/JakeSteam/0c68243f7e90da9bea70362461d59f34" target="_blank" rel="noopener noreferrer">as a gist</a>.
 
 Whilst the uploading process is simple, the biggest challenge is actually authenticating with Google! We'll cover that before diving into the code itself.
