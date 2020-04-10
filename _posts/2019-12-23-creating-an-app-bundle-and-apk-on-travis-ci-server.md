@@ -16,6 +16,8 @@ App bundles are one of my <a href="https://www.youtube.com/watch?v=Z-yJTjbswhw" 
 Currently I am transitioning a large app slowly from APKs to app bundles whilst retaining compatibility with our existing processes. For now this means generating both app bundles and APKs. Whilst creating both isn't especially tricky, the detailed explanations in this post should make it easier to implement into Travis.
 
 <!--more-->
+
+<strong>Update</strong>: If using Gradle plugin 3.5.0+, the app bundle will be generated at <code>app-&lt;variant&gt;.aab</code> (e.g. <code>app-debug.aab</code>) instead of <code>app.aab</code>. The following tutorial has been left unchanged, make sure to edit your script if using a later Gradle plugin version!
 <h2>The plan</h2>
 Our approach is going to consist of 4 steps:
 <ul>
