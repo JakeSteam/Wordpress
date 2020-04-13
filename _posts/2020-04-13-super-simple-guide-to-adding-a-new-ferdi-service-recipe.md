@@ -48,7 +48,7 @@ This is the Nextdoor script, it needs to be customised (via trial and error in t
 
 module.exports = Franz =&gt; {
   const getMessages = function getMessages() {
-    unread = 0
+    var unread = 0
     const notificationBadge = document.getElementsByClassName('notification-badge')[0]
     if (notificationBadge != undefined) {
         unread = notificationBadge.innerText;
