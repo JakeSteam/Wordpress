@@ -31,7 +31,8 @@ I've also included 4 buttons. One for the Google Play Internal App Sharing link 
 <h2>Getting a Slack webhook</h2>
 Slack has <a href="https://api.slack.com/messaging/webhooks" target="_blank" rel="noopener noreferrer">an official guide</a> to creating a webhook URL, but it is much more complicated than necessary. The essential steps are:
 <ol>
- 	<li>Add the "<a href="https://androidstudygroup.slack.com/apps/A0F7XDUAZ-incoming-webhooks?next_id=0" target="_blank" rel="noopener noreferrer">Incoming WebHooks</a>" app to your Slack workspace by clicking "Add to Slack" (this will be "Request Configuration if you're not an admin).</li>
+ 	<li>Create <a href="https://api.slack.com/apps/new" target="_blank" rel="noopener noreferrer">a new app</a>.</li>
+ 	<li>Add the "Incoming WebHooks" app to your Slack workspace by clicking "Add to Slack" from <a href="https://api.slack.com/apps" target="_blank" rel="noopener noreferrer">the app management page</a> (this will be "Request Configuration" if you're not an admin).</li>
  	<li>Select which room the messages should go to (<a href="https://i.imgur.com/RspYoeQ.png" target="_blank" rel="noopener noreferrer">picture</a>). It might be helpful setting this to a private message with yourself whilst testing!</li>
  	<li>Once added, scroll down to "Integration settings" (<a href="https://i.imgur.com/4qGPM7X.png" target="_blank" rel="noopener noreferrer">picture</a>), and customise the name and avatar (emoji or uploaded image).</li>
  	<li>Copy the "Webhook URL".</li>
