@@ -11,7 +11,7 @@ permalink: >
 published: true
 post_date: 2020-07-31 15:20:20
 ---
-After recently struggling to make a small modification to a simple translucent overlay, I decided to experiment with gradients in Android drawables. After a few hours, I at least understand the basics now! Drawable gradients seem to be rarely used despite their simple syntax, with people preferring to use SVGs or static images.
+After recently struggling to make a small modification to a simple translucent overlay, I decided to experiment with gradients in Android drawables. After a few hours, I discovered a few new possibilities! Drawable gradients seem to be rarely used despite their simple syntax, with people preferring to use SVGs or static images.
 
 I've included a few example outputs in this post, hopefully these help those struggling to create a gradient. I also recommend taking a look at <a href="https://angrytools.com/gradient/" target="_blank" rel="noopener noreferrer">AngryTools' gradient generator</a> (Android tab), to easily generate the XML for simpler gradients automatically.
 
