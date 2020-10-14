@@ -15,7 +15,11 @@ Often an open source project will have API keys, auth tokens, and other secrets 
 
 In the past, I've just added it to my <code>local.properties</code> and <a href="https://stackoverflow.com/a/2047477/608312" target="_blank" rel="noopener noreferrer">removed the file from git</a>, but this approach doesn't work when using GitHub Actions!
 
-This post is available <a href="https://gist.github.com/JakeSteam/4ff98553691d1d30949fb1de6adf83a5" target="_blank" rel="noopener noreferrer">as a GitHub gist</a>.<!--more-->
+This post is available <a href="https://gist.github.com/JakeSteam/4ff98553691d1d30949fb1de6adf83a5" target="_blank" rel="noopener noreferrer">as a GitHub gist</a>.
+
+<strong>Note: </strong>As per a couple of comments, you could skip the properties file and use <code>System.getEnv(x)</code>. I personally prefer keeping it in the project's gradle file, to keep the secret only accessible from the project itself.
+
+<!--more-->
 <h2>Approach to secrets</h2>
 The approach to storing the secret isn't going to change too much, there'll just be a few changes to cater for GitHub Actions (italic = new):
 <ol>
