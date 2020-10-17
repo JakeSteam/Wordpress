@@ -24,7 +24,7 @@ Pretty good, for a completely free setup!
 
 <!--more-->
 <h2>Installing ShareX</h2>
-First, <a href="https://getsharex.com/" target="_blank" rel="noopener">download and install ShareX</a>. It's also <a href="https://store.steampowered.com/app/400040/ShareX/" target="_blank" rel="noopener">available on Steam</a>.
+First, <a href="https://getsharex.com/" target="_blank" rel="noopener noreferrer">download and install ShareX</a>. It's also <a href="https://store.steampowered.com/app/400040/ShareX/" target="_blank" rel="noopener noreferrer">available on Steam</a>.
 
 It has an absolutely staggering number of features (see gif below), and it's definitely worth having a look at the included tools if you're ever looking for a new utility program.
 
@@ -56,7 +56,7 @@ In the same "Destinations" menu, open "Destination settings". You'll now need to
  	<li>Copy this code into the "Verification code" text box in ShareX.</li>
  	<li>Click "Step 2: Complete authorization".</li>
 </ol>
-<a href="https://blog.jakelee.co.uk/wp-content/uploads/2018/12/x8Eqj42.png"><img class="aligncenter size-medium wp-image-2273" src="https://blog.jakelee.co.uk/wp-content/uploads/2018/12/x8Eqj42-300x190.png" alt="" width="300" height="190" /></a>
+<a href="https://blog.jakelee.co.uk/wp-content/uploads/2018/12/NtoNJTj.png"><img class="aligncenter size-medium wp-image-2927" src="https://blog.jakelee.co.uk/wp-content/uploads/2018/12/NtoNJTj-300x190.png" alt="" width="300" height="190" /></a>
 
 You're now connected! Time to get an album set up.
 <h3>Uploading ShareX images to an Imgur album</h3>
@@ -95,7 +95,7 @@ When your hotkey is pressed, the ShareX screenshot tool will popup. Whilst just 
  	<li>The "001" icon lets you start counting. Once enabled, each time you click a new number will appear, one higher than the one before. This is useful for listing steps in a process.</li>
  	<li>The folder icon lets you overlay an existing image into your screenshot.</li>
  	<li>The monitor icon lets you overlay a part of the screen on your screenshot. Yes, really!</li>
- 	<li>The emoji icon lets you add a sticker. Google's blob emojis and a few custom ones are included. The <a href="https://github.com/ShareX/ShareX/tree/master/ShareX.ScreenCaptureLib/Stickers/BlobEmoji" target="_blank" rel="noopener">full list is in the source code</a>.</li>
+ 	<li>The emoji icon lets you add a sticker. Google's blob emojis and a few custom ones are included. The <a href="https://github.com/ShareX/ShareX/tree/master/ShareX.ScreenCaptureLib/Stickers/BlobEmoji" target="_blank" rel="noopener noreferrer">full list is in the source code</a>.</li>
  	<li>The pointer icon lets you display a cursor on your screenshot.</li>
  	<li>The striped area icon lets you blur a selected area.</li>
  	<li>The grid icon lets you pixelate a selected area.</li>
@@ -114,7 +114,7 @@ When your hotkey is pressed, the ShareX screenshot tool will popup. Whilst just 
  	<li>Additionally, selecting an area shows the below UI, with your cursor's original X + Y coord, and the selected areas width and height.</li>
 </ol>
 <h2><a href="https://blog.jakelee.co.uk/wp-content/uploads/2018/12/ofM9S7t.png"><img class="aligncenter size-full wp-image-2277" src="https://blog.jakelee.co.uk/wp-content/uploads/2018/12/ofM9S7t.png" alt="" width="261" height="133" /></a>Summary</h2>
-Hopefully you've now got your ShareX setup with some basic but useful functionality. There's a <strong>lot</strong> more customisation available, this is barely scratching the surface, so experiment by yourself! There is some community support available on <a href="https://steamcommunity.com/app/400040/discussions/" target="_blank" rel="noopener">the Steam forums</a> and on <a href="https://www.reddit.com/r/sharex">/r/ShareX</a>.
+Hopefully you've now got your ShareX setup with some basic but useful functionality. There's a <strong>lot</strong> more customisation available, this is barely scratching the surface, so experiment by yourself! There is some community support available on <a href="https://steamcommunity.com/app/400040/discussions/" target="_blank" rel="noopener noreferrer">the Steam forums</a> and on <a href="https://www.reddit.com/r/sharex">/r/ShareX</a>.
 
 There's also lots of included tools, many with further customisation, such as those screenshotted below. Gifs can also be recorded, images saved locally, and all kinds of convoluted workflows setup! I use ShareX for all screenshots on this blog, and find it extremely useful, usually capturing 10-30 images per day.
 
